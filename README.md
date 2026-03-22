@@ -23,7 +23,7 @@ The core requires the following:
     ```
     - Run `claude auth login` to connect it to your account.
     - Run `claude /install-github-app` to connect the claude app with the repository.
-    - Run `claude setup-token`, grab the token that is generated, and save it as your `CLAUDE_CODE_OAUTH_TOKEN` secret in GitHub.
+    - Run `claude setup-token`, grab the token that is generated, and save it as your `CLAUDE_CODE_OAUTH_TOKEN` secret in GitHub under Settings → Secrets and variables → Actions → New repository secret.
 3. Now you will need to copy to your repository (commit and push) the workflow file (see `.github/workflows/claude.yml` in this repository) in your repository. This file will trigger the agent when it is called upon via any @claude comment in issue or PR
 4. Also add to your repository the provided `CLAUDE.md` file
 5. Optional: Add `AGENTS.md` with all project specific information for the agent. You can use the agent in CLI to generate the file
